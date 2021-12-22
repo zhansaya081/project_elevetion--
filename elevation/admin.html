@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<title>adminpanel</title>
+</head>
+<body>
+	
+ <div class="nav">
+        <ul>
+            <a href="index.html"><li> Home </li></a>
+            <a href="about.html"><li> About us </li></a>
+            <a href="content.html"><li> Content </li></a>
+            <a href="registration.html"><li> Register </li></a>
+        </ul>
+    </div>
+
+<div class="block__adm">
+     <div class="adminpn">Админ Панель</div> 
+        
+       <div class="listsort">
+        </div>
+
+        <form>
+        <div id="change"style="display: none;" >
+
+            <fieldset class="field">
+            <label>
+           Change Username:
+              
+                <input id="change-username" type="text">
+            </label>
+            <label>
+              Change Email:
+                <input id="change-name" type="text">
+            </label>
+            <button id="addbutton" onclick="onSave()">Save User</button></fieldset>
+        </div></form>
+        <button id="newuser" onclick="addnewuser()">New user</button>
+        <form>
+        <div id="add" style=" display: none;">
+            <fieldset class="field">
+            <label>
+               <p> Username:</p>
+                <input id="add-username" type="text">
+            </label>
+            <label>
+               <p> Name:</p>
+                <input id="add-name" type="text">
+            </label>
+            <button id="addbutton"onclick="adduser()">Add User</button></fieldset>
+        </div>
+    </form>
+        <ul class="userList">
+    
+        </ul>
+    <a href="zapisavshies.html"><button id="zapis" >Users list</button>
+    </div>
+
+
+
+
+    
+
+
+
+     <script src="ded.js"></script>
+
+</body>
+</html>
